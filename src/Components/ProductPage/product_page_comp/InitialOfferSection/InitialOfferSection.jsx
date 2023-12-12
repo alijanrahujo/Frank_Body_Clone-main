@@ -59,7 +59,7 @@ function InitialOfferSection() {
                     <div className={activecat == "Body Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Body Care")}>Body Care</div>
                     <div className={activecat == "Skin Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Skin Care")}>Skin Care</div>
                     <div className={activecat == "Lip Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Lip Care")}>Lip Care</div>
-                    <div className={activecat == "HAIR" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("HAIR")}>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
+                    <div className={activecat == "HAIR" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Hair Care")}>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
                     <div className={activecat == "Perfumes" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Perfumes")}>Perfumes</div>
                     
                     </div>
