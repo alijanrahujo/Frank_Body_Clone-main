@@ -14,12 +14,20 @@ import bfi3 from './Images/buttfrominsta/bfi3.webp';
 import bfi4 from './Images/buttfrominsta/bfi4.webp';
 import bannerI1 from './Images/bannerI1.webp'
 import { Footer } from "../Footer/footer";
+import { useDispatch } from "react-redux";
+import { SetLogin } from "../../ReduxStore/Actions/mainAction";
 
 
 
 
 
 function LandingPage() {
+
+    const dispatch = useDispatch();
+
+    if(localStorage.getItem("Login_Status")){
+        SetLogin(dispatch, true);
+    }
 
 
     return (
