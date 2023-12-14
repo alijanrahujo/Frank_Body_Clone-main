@@ -38,7 +38,7 @@ function Register() {
   const Registerationhandler = (e) => {
     e.preventDefault();
 
-    fetch('https://skincate.orasoft.pk/api/v1/register', {
+    fetch('https://skincare.oradotint.com/api/v1/register', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

@@ -50,7 +50,7 @@ function Login() {
 
         e.preventDefault();
 
-        fetch('https://skincate.orasoft.pk/api/v1/login', {
+        fetch('https://skincare.oradotint.com/api/v1/login', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

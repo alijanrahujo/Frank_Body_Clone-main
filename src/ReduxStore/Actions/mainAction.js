@@ -4,7 +4,7 @@ export default function AddProducts(dispatch , updatefilte){
         // const res = await fetch('https://frankbodyapi.herokuapp.com/products');
         // const res = await fetch('https://odd-pleat-cod.cyclic.app/products');
         // const res = await fetch('http://127.0.0.1:8000/api/v1/product');
-        const res = await fetch('https://skincate.orasoft.pk/api/v1/product');
+        const res = await fetch('https://skincare.oradotint.com/api/v1/product');
         const data = await res.json();
 
         let temp = data.map((elem)=>{
@@ -49,7 +49,7 @@ const actual = {...data , cartStatus:true};
 // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
     // fetch(`https://odd-pleat-cod.cyclic.app/products/${id}`,{
-    fetch(`https://skincate.orasoft.pk/api/v1/product/${id}`,{
+    fetch(`https://skincare.oradotint.com/api/v1/product/${id}`,{
 
 
         method:'PATCH',
@@ -73,7 +73,7 @@ function quantityZero(data ,dispatch , id){
     // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
         // fetch(`https://odd-pleat-cod.cyclic.app/products/${id}`,{
-        fetch(`https://skincate.orasoft.pk/api/v1/product/${id}`,{
+        fetch(`https://skincare.oradotint.com/api/v1/product/${id}`,{
         method:'PATCH',
         headers:{
             "Content-Type": "application/json"
@@ -156,7 +156,7 @@ function getCat(dispatch, status)
     async function getData()
     {
         // const res = await fetch('http://127.0.0.1:8000/api/v1/category');
-        const res = await fetch('https://skincate.orasoft.pk/api/v1/category');
+        const res = await fetch('https://skincare.oradotint.com/api/v1/category');
         const data = await res.json();
 
         let temp = data.map((elem)=>{
